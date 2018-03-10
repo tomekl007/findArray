@@ -4,6 +4,29 @@
 
 using namespace std;
 
+class DataSet {
+public:
+    DataSet(int dataSetToFind[],
+            int numberOfElements,
+            int dataSet[],
+            int nubmerOfElementsToFind)
+            : dataSetToFind(dataSetToFind),
+              numberOfElements(numberOfElements),
+              dataSet(dataSet),
+              numberOfElementsToFind(nubmerOfElementsToFind) {
+
+    }
+
+public:
+
+private:
+    int numberOfElements;
+    int *dataSet;
+    int numberOfElementsToFind;
+    int *dataSetToFind;
+
+};
+
 void split(string line, int arr[], int numberOfElements) {
     int i = 0;
     stringstream ssin(line);
@@ -32,6 +55,8 @@ void f_otwarcie_pliku_do_odczytu(ifstream &odczyt_pliku) {
     if (myfile.is_open()) {
         getline(myfile, line);
         numberOfInputDataSets = std::stoi(line);
+        DataSet *dataSets[numberOfInputDataSets];
+
         cout << "number of data sets " << numberOfInputDataSets << endl;
 
         for (int dataSetNumber = 0; dataSetNumber < numberOfInputDataSets; dataSetNumber++) {
@@ -50,6 +75,7 @@ void f_otwarcie_pliku_do_odczytu(ifstream &odczyt_pliku) {
             getline(myfile, line);
             cout << "dataSet to find before parse " << line << endl;
             split(line, dataToFind, numberOfElementsToSearch);
+            dataSets[dataSetNumber] = new DataSet(dataToFind, numberOfElements, dataSet, numberOfElementsToSearch);
         }
 
         myfile.close();
