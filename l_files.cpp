@@ -1,14 +1,19 @@
 #include <sstream>
 #include <vector>
+#include <set>
 #include "l_files.h"
 
 
 int f_wyszukiwanie_interpolacyjne(long long k, int N, long long *Z);
 
-void
-obliczLiczbeElementow(long long dataSet[], int numberOfElements, const long long dataSetToFind[], int numbersToFind);
+long long **
+obliczLiczbeElementow(long long int dataSet[], int numberOfElements, long long int dataSetToFind[],
+                      int numbersToFind);
 
 int f_znajd_liczbe_wystapien(long long szukanaLiczbna, int N, long long dataSet[]);
+
+
+set<long long> f_usun_duplikaty(long long dataSet[], int n);
 
 using namespace std;
 
@@ -64,8 +69,44 @@ void f_otwarcie_pliku_do_odczytu(ifstream &odczyt_pliku) {
             cout << "dataSet to find before parse " << line << endl;
             split(line, dataToFind, numberOfElementsToSearch);
 
-            obliczLiczbeElementow(dataSet, numberOfElements, dataToFind, numberOfElementsToSearch);
 
+            //todo tmp directory
+            ofstream outputFile(string("/tmp/out")
+                                        .append(std::to_string(dataSetNumber + 1))
+                                        .append(".txt")
+            );
+
+            long long **result = obliczLiczbeElementow(dataSet,
+                                                       numberOfElements,
+                                                       dataToFind,
+                                                       numberOfElementsToSearch
+            );
+
+
+            for (int i = 0; i < numberOfElementsToSearch; i++) {
+                cout << result[i][0] << " " << result[i][1] << " " << endl;
+
+                outputFile << "(" << result[i][0] << " " << result[i][1] << ") ";
+            }
+            outputFile << endl;
+
+            auto usunieteDuplikaty = f_usun_duplikaty(dataSet, numberOfElements);
+
+            int counter = 0;
+            for (auto f : usunieteDuplikaty) {
+                if (counter >= 200) {
+                    break;
+                }
+
+                if (counter % 50 == 0) {
+                    outputFile << endl;
+                }
+
+                cout << "dup removed: " << endl;
+                cout << f;
+                outputFile << f << " ";
+                counter++;
+            }
         }
 
         myfile.close();
@@ -97,8 +138,10 @@ int f_wyszukiwanie_interpolacyjne(long long k, int N, long long *Z) {
 }
 
 
-void
-obliczLiczbeElementow(long long dataSet[], int numberOfElements, const long long dataSetToFind[], int numbersToFind) {
+long long **
+obliczLiczbeElementow(long long int dataSet[], int numberOfElements, long long int dataSetToFind[],
+                      int numbersToFind) {
+    auto **result = new long long *[numbersToFind];
 
     for (int i = 0; i < numbersToFind; i++) {
 //        wyszukiwanieBinarne(dataSet, numberOfElements, dataSetToFind[i]);
@@ -111,7 +154,11 @@ obliczLiczbeElementow(long long dataSet[], int numberOfElements, const long long
         int index = f_wyszukiwanie_interpolacyjne(szukanaLiczba, numberOfElements, dataSet);
         cout << "index: " << index << endl;
 
+        result[i] = new long long[2];
+        result[i][0] = liczbaElementow;
+        result[i][1] = index;
     }
+    return result;
 }
 
 int f_znajd_liczbe_wystapien(long long szukanaLiczbna, int N, long long dataSet[]) {
@@ -122,5 +169,21 @@ int f_znajd_liczbe_wystapien(long long szukanaLiczbna, int N, long long dataSet[
         }
     }
     return counter;
+}
+
+set<long long> f_usun_duplikaty(long long dataSet[], int n) {
+//    long long result[n];
+//
+//    for (int i = 0; i < n; i++) {
+//        result[dataSet[i] % n] = dataSet[i];
+//    }
+//    return result;
+
+    std::set<long long> result;
+
+    for (int i = 0; i < n; i++) {
+        result.insert(dataSet[i]);
+    }
+    return result;
 }
 
