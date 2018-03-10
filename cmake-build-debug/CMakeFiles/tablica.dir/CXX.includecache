@@ -6,7 +6,27 @@
 
 #IncludeRegexTransform: 
 
-/Users/tomasz.lelek/CLionProjects/tablica/main.cpp
+/Users/tomasz.lelek/CLionProjects/tablica/Pycinska_Katarzyna_Program_01.cpp
 iostream
+-
+string
+-
+fstream
+-
+l_files.h
+/Users/tomasz.lelek/CLionProjects/tablica/l_files.h
+
+/Users/tomasz.lelek/CLionProjects/tablica/l_files.cpp
+sstream
+-
+l_files.h
+/Users/tomasz.lelek/CLionProjects/tablica/l_files.h
+
+/Users/tomasz.lelek/CLionProjects/tablica/l_files.h
+iostream
+-
+string
+-
+fstream
 -
 

@@ -34,10 +34,10 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /private/var/folders/zt/zmm7s_qx05zb7239m2_nlhfszbykhz/T/AppTranslocation/71C63CA5-D23B-454C-A03B-E41EC58E135C/d/CLion.app/Contents/bin/cmake/bin/cmake
+CMAKE_COMMAND = "/Users/tomasz.lelek/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/173.4548.31/CLion.app/Contents/bin/cmake/bin/cmake"
 
 # The command to remove a file.
-RM = /private/var/folders/zt/zmm7s_qx05zb7239m2_nlhfszbykhz/T/AppTranslocation/71C63CA5-D23B-454C-A03B-E41EC58E135C/d/CLion.app/Contents/bin/cmake/bin/cmake -E remove -f
+RM = "/Users/tomasz.lelek/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/173.4548.31/CLion.app/Contents/bin/cmake/bin/cmake" -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
@@ -57,41 +57,67 @@ include CMakeFiles/tablica.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/tablica.dir/flags.make
 
-CMakeFiles/tablica.dir/main.cpp.o: CMakeFiles/tablica.dir/flags.make
-CMakeFiles/tablica.dir/main.cpp.o: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/tomasz.lelek/CLionProjects/tablica/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/tablica.dir/main.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tablica.dir/main.cpp.o -c /Users/tomasz.lelek/CLionProjects/tablica/main.cpp
+CMakeFiles/tablica.dir/Pycinska_Katarzyna_Program_01.cpp.o: CMakeFiles/tablica.dir/flags.make
+CMakeFiles/tablica.dir/Pycinska_Katarzyna_Program_01.cpp.o: ../Pycinska_Katarzyna_Program_01.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/tomasz.lelek/CLionProjects/tablica/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/tablica.dir/Pycinska_Katarzyna_Program_01.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tablica.dir/Pycinska_Katarzyna_Program_01.cpp.o -c /Users/tomasz.lelek/CLionProjects/tablica/Pycinska_Katarzyna_Program_01.cpp
 
-CMakeFiles/tablica.dir/main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/tablica.dir/main.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/tomasz.lelek/CLionProjects/tablica/main.cpp > CMakeFiles/tablica.dir/main.cpp.i
+CMakeFiles/tablica.dir/Pycinska_Katarzyna_Program_01.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/tablica.dir/Pycinska_Katarzyna_Program_01.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/tomasz.lelek/CLionProjects/tablica/Pycinska_Katarzyna_Program_01.cpp > CMakeFiles/tablica.dir/Pycinska_Katarzyna_Program_01.cpp.i
 
-CMakeFiles/tablica.dir/main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/tablica.dir/main.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/tomasz.lelek/CLionProjects/tablica/main.cpp -o CMakeFiles/tablica.dir/main.cpp.s
+CMakeFiles/tablica.dir/Pycinska_Katarzyna_Program_01.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/tablica.dir/Pycinska_Katarzyna_Program_01.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/tomasz.lelek/CLionProjects/tablica/Pycinska_Katarzyna_Program_01.cpp -o CMakeFiles/tablica.dir/Pycinska_Katarzyna_Program_01.cpp.s
 
-CMakeFiles/tablica.dir/main.cpp.o.requires:
+CMakeFiles/tablica.dir/Pycinska_Katarzyna_Program_01.cpp.o.requires:
 
-.PHONY : CMakeFiles/tablica.dir/main.cpp.o.requires
+.PHONY : CMakeFiles/tablica.dir/Pycinska_Katarzyna_Program_01.cpp.o.requires
 
-CMakeFiles/tablica.dir/main.cpp.o.provides: CMakeFiles/tablica.dir/main.cpp.o.requires
-	$(MAKE) -f CMakeFiles/tablica.dir/build.make CMakeFiles/tablica.dir/main.cpp.o.provides.build
-.PHONY : CMakeFiles/tablica.dir/main.cpp.o.provides
+CMakeFiles/tablica.dir/Pycinska_Katarzyna_Program_01.cpp.o.provides: CMakeFiles/tablica.dir/Pycinska_Katarzyna_Program_01.cpp.o.requires
+	$(MAKE) -f CMakeFiles/tablica.dir/build.make CMakeFiles/tablica.dir/Pycinska_Katarzyna_Program_01.cpp.o.provides.build
+.PHONY : CMakeFiles/tablica.dir/Pycinska_Katarzyna_Program_01.cpp.o.provides
 
-CMakeFiles/tablica.dir/main.cpp.o.provides.build: CMakeFiles/tablica.dir/main.cpp.o
+CMakeFiles/tablica.dir/Pycinska_Katarzyna_Program_01.cpp.o.provides.build: CMakeFiles/tablica.dir/Pycinska_Katarzyna_Program_01.cpp.o
+
+
+CMakeFiles/tablica.dir/l_files.cpp.o: CMakeFiles/tablica.dir/flags.make
+CMakeFiles/tablica.dir/l_files.cpp.o: ../l_files.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/tomasz.lelek/CLionProjects/tablica/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/tablica.dir/l_files.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tablica.dir/l_files.cpp.o -c /Users/tomasz.lelek/CLionProjects/tablica/l_files.cpp
+
+CMakeFiles/tablica.dir/l_files.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/tablica.dir/l_files.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/tomasz.lelek/CLionProjects/tablica/l_files.cpp > CMakeFiles/tablica.dir/l_files.cpp.i
+
+CMakeFiles/tablica.dir/l_files.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/tablica.dir/l_files.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/tomasz.lelek/CLionProjects/tablica/l_files.cpp -o CMakeFiles/tablica.dir/l_files.cpp.s
+
+CMakeFiles/tablica.dir/l_files.cpp.o.requires:
+
+.PHONY : CMakeFiles/tablica.dir/l_files.cpp.o.requires
+
+CMakeFiles/tablica.dir/l_files.cpp.o.provides: CMakeFiles/tablica.dir/l_files.cpp.o.requires
+	$(MAKE) -f CMakeFiles/tablica.dir/build.make CMakeFiles/tablica.dir/l_files.cpp.o.provides.build
+.PHONY : CMakeFiles/tablica.dir/l_files.cpp.o.provides
+
+CMakeFiles/tablica.dir/l_files.cpp.o.provides.build: CMakeFiles/tablica.dir/l_files.cpp.o
 
 
 # Object files for target tablica
 tablica_OBJECTS = \
-"CMakeFiles/tablica.dir/main.cpp.o"
+"CMakeFiles/tablica.dir/Pycinska_Katarzyna_Program_01.cpp.o" \
+"CMakeFiles/tablica.dir/l_files.cpp.o"
 
 # External object files for target tablica
 tablica_EXTERNAL_OBJECTS =
 
-tablica: CMakeFiles/tablica.dir/main.cpp.o
+tablica: CMakeFiles/tablica.dir/Pycinska_Katarzyna_Program_01.cpp.o
+tablica: CMakeFiles/tablica.dir/l_files.cpp.o
 tablica: CMakeFiles/tablica.dir/build.make
 tablica: CMakeFiles/tablica.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/tomasz.lelek/CLionProjects/tablica/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable tablica"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/tomasz.lelek/CLionProjects/tablica/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable tablica"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/tablica.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -99,7 +125,8 @@ CMakeFiles/tablica.dir/build: tablica
 
 .PHONY : CMakeFiles/tablica.dir/build
 
-CMakeFiles/tablica.dir/requires: CMakeFiles/tablica.dir/main.cpp.o.requires
+CMakeFiles/tablica.dir/requires: CMakeFiles/tablica.dir/Pycinska_Katarzyna_Program_01.cpp.o.requires
+CMakeFiles/tablica.dir/requires: CMakeFiles/tablica.dir/l_files.cpp.o.requires
 
 .PHONY : CMakeFiles/tablica.dir/requires
 

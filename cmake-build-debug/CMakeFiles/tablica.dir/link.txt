@@ -1,1 +1,1 @@
-/Library/Developer/CommandLineTools/usr/bin/c++  -g -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/tablica.dir/main.cpp.o  -o tablica 
+/Library/Developer/CommandLineTools/usr/bin/c++  -g -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/tablica.dir/Pycinska_Katarzyna_Program_01.cpp.o CMakeFiles/tablica.dir/l_files.cpp.o  -o tablica 

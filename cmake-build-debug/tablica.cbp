@@ -82,7 +82,13 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/Users/tomasz.lelek/CLionProjects/tablica/main.cpp">
+		<Unit filename="/Users/tomasz.lelek/CLionProjects/tablica/Pycinska_Katarzyna_Program_01.cpp">
+			<Option target="tablica"/>
+		</Unit>
+		<Unit filename="/Users/tomasz.lelek/CLionProjects/tablica/l_files.cpp">
+			<Option target="tablica"/>
+		</Unit>
+		<Unit filename="/Users/tomasz.lelek/CLionProjects/tablica/l_files.h">
 			<Option target="tablica"/>
 		</Unit>
 		<Unit filename="/Users/tomasz.lelek/CLionProjects/tablica/CMakeLists.txt">

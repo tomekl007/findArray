@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/tablica.dir/main.cpp.o"
+  "CMakeFiles/tablica.dir/Pycinska_Katarzyna_Program_01.cpp.o"
+  "CMakeFiles/tablica.dir/l_files.cpp.o"
   "tablica.pdb"
   "tablica"
 )

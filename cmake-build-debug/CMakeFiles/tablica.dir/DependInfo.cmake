@@ -4,7 +4,8 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/Users/tomasz.lelek/CLionProjects/tablica/main.cpp" "/Users/tomasz.lelek/CLionProjects/tablica/cmake-build-debug/CMakeFiles/tablica.dir/main.cpp.o"
+  "/Users/tomasz.lelek/CLionProjects/tablica/Pycinska_Katarzyna_Program_01.cpp" "/Users/tomasz.lelek/CLionProjects/tablica/cmake-build-debug/CMakeFiles/tablica.dir/Pycinska_Katarzyna_Program_01.cpp.o"
+  "/Users/tomasz.lelek/CLionProjects/tablica/l_files.cpp" "/Users/tomasz.lelek/CLionProjects/tablica/cmake-build-debug/CMakeFiles/tablica.dir/l_files.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "AppleClang")
 

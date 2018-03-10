@@ -39,10 +39,10 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /private/var/folders/zt/zmm7s_qx05zb7239m2_nlhfszbykhz/T/AppTranslocation/71C63CA5-D23B-454C-A03B-E41EC58E135C/d/CLion.app/Contents/bin/cmake/bin/cmake
+CMAKE_COMMAND = "/Users/tomasz.lelek/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/173.4548.31/CLion.app/Contents/bin/cmake/bin/cmake"
 
 # The command to remove a file.
-RM = /private/var/folders/zt/zmm7s_qx05zb7239m2_nlhfszbykhz/T/AppTranslocation/71C63CA5-D23B-454C-A03B-E41EC58E135C/d/CLion.app/Contents/bin/cmake/bin/cmake -E remove -f
+RM = "/Users/tomasz.lelek/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/173.4548.31/CLion.app/Contents/bin/cmake/bin/cmake" -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
@@ -59,7 +59,7 @@ CMAKE_BINARY_DIR = /Users/tomasz.lelek/CLionProjects/tablica/cmake-build-debug
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/private/var/folders/zt/zmm7s_qx05zb7239m2_nlhfszbykhz/T/AppTranslocation/71C63CA5-D23B-454C-A03B-E41EC58E135C/d/CLion.app/Contents/bin/cmake/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	"/Users/tomasz.lelek/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/173.4548.31/CLion.app/Contents/bin/cmake/bin/cmake" -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -70,7 +70,7 @@ rebuild_cache/fast: rebuild_cache
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/private/var/folders/zt/zmm7s_qx05zb7239m2_nlhfszbykhz/T/AppTranslocation/71C63CA5-D23B-454C-A03B-E41EC58E135C/d/CLion.app/Contents/bin/cmake/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	"/Users/tomasz.lelek/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/173.4548.31/CLion.app/Contents/bin/cmake/bin/cmake" -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -123,32 +123,59 @@ tablica/fast:
 	$(MAKE) -f CMakeFiles/tablica.dir/build.make CMakeFiles/tablica.dir/build
 .PHONY : tablica/fast
 
-main.o: main.cpp.o
+Pycinska_Katarzyna_Program_01.o: Pycinska_Katarzyna_Program_01.cpp.o
 
-.PHONY : main.o
+.PHONY : Pycinska_Katarzyna_Program_01.o
 
 # target to build an object file
-main.cpp.o:
-	$(MAKE) -f CMakeFiles/tablica.dir/build.make CMakeFiles/tablica.dir/main.cpp.o
-.PHONY : main.cpp.o
+Pycinska_Katarzyna_Program_01.cpp.o:
+	$(MAKE) -f CMakeFiles/tablica.dir/build.make CMakeFiles/tablica.dir/Pycinska_Katarzyna_Program_01.cpp.o
+.PHONY : Pycinska_Katarzyna_Program_01.cpp.o
 
-main.i: main.cpp.i
+Pycinska_Katarzyna_Program_01.i: Pycinska_Katarzyna_Program_01.cpp.i
 
-.PHONY : main.i
+.PHONY : Pycinska_Katarzyna_Program_01.i
 
 # target to preprocess a source file
-main.cpp.i:
-	$(MAKE) -f CMakeFiles/tablica.dir/build.make CMakeFiles/tablica.dir/main.cpp.i
-.PHONY : main.cpp.i
+Pycinska_Katarzyna_Program_01.cpp.i:
+	$(MAKE) -f CMakeFiles/tablica.dir/build.make CMakeFiles/tablica.dir/Pycinska_Katarzyna_Program_01.cpp.i
+.PHONY : Pycinska_Katarzyna_Program_01.cpp.i
 
-main.s: main.cpp.s
+Pycinska_Katarzyna_Program_01.s: Pycinska_Katarzyna_Program_01.cpp.s
 
-.PHONY : main.s
+.PHONY : Pycinska_Katarzyna_Program_01.s
 
 # target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) -f CMakeFiles/tablica.dir/build.make CMakeFiles/tablica.dir/main.cpp.s
-.PHONY : main.cpp.s
+Pycinska_Katarzyna_Program_01.cpp.s:
+	$(MAKE) -f CMakeFiles/tablica.dir/build.make CMakeFiles/tablica.dir/Pycinska_Katarzyna_Program_01.cpp.s
+.PHONY : Pycinska_Katarzyna_Program_01.cpp.s
+
+l_files.o: l_files.cpp.o
+
+.PHONY : l_files.o
+
+# target to build an object file
+l_files.cpp.o:
+	$(MAKE) -f CMakeFiles/tablica.dir/build.make CMakeFiles/tablica.dir/l_files.cpp.o
+.PHONY : l_files.cpp.o
+
+l_files.i: l_files.cpp.i
+
+.PHONY : l_files.i
+
+# target to preprocess a source file
+l_files.cpp.i:
+	$(MAKE) -f CMakeFiles/tablica.dir/build.make CMakeFiles/tablica.dir/l_files.cpp.i
+.PHONY : l_files.cpp.i
+
+l_files.s: l_files.cpp.s
+
+.PHONY : l_files.s
+
+# target to generate assembly for a file
+l_files.cpp.s:
+	$(MAKE) -f CMakeFiles/tablica.dir/build.make CMakeFiles/tablica.dir/l_files.cpp.s
+.PHONY : l_files.cpp.s
 
 # Help Target
 help:
@@ -159,9 +186,12 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... tablica"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
+	@echo "... Pycinska_Katarzyna_Program_01.o"
+	@echo "... Pycinska_Katarzyna_Program_01.i"
+	@echo "... Pycinska_Katarzyna_Program_01.s"
+	@echo "... l_files.o"
+	@echo "... l_files.i"
+	@echo "... l_files.s"
 .PHONY : help
 
 

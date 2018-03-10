@@ -3,4 +3,4 @@ project(tablica)
 
 set(CMAKE_CXX_STANDARD 11)
 
-add_executable(tablica main.cpp)
+add_executable(tablica Pycinska_Katarzyna_Program_01.cpp l_files.cpp l_files.h)
