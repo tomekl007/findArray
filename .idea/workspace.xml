@@ -13,9 +13,10 @@
   <component name="ChangeListManager">
     <list default="true" id="10af8af2-da7b-44db-8c42-c7f5e861210c" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tablica.dir/CXX.includecache" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tablica.dir/CXX.includecache" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/tablica" afterPath="$PROJECT_DIR$/cmake-build-debug/tablica" />
+      <change beforePath="$PROJECT_DIR$/Pycinska_Katarzyna_Program_01.cpp" afterPath="$PROJECT_DIR$/Pycinska_Katarzyna_Program_01.cpp" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/tablica" afterPath="" />
       <change beforePath="$PROJECT_DIR$/l_files.cpp" afterPath="$PROJECT_DIR$/l_files.cpp" />
+      <change beforePath="$PROJECT_DIR$/l_files.h" afterPath="$PROJECT_DIR$/l_files.h" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -68,24 +69,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CMakeLists.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+      <file leaf-file-name="l_files.cpp" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/l_files.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="59" lean-forward="false" selection-start-line="5" selection-start-column="59" selection-end-line="5" selection-end-column="59" />
-              <folding />
+            <state relative-caret-position="326">
+              <caret line="148" column="33" lean-forward="false" selection-start-line="148" selection-start-column="33" selection-end-line="148" selection-end-column="33" />
+              <folding>
+                <element signature="e#0#18#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="l_files.cpp" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/l_files.cpp">
+      <file leaf-file-name="istream" pinned="false" current-in-tab="false">
+        <entry file="file:///Library/Developer/CommandLineTools/usr/include/c++/v1/istream">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-834">
-              <caret line="29" column="19" lean-forward="true" selection-start-line="29" selection-start-column="19" selection-end-line="29" selection-end-column="19" />
-              <folding>
-                <element signature="e#0#18#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="159">
+              <caret line="1603" column="0" lean-forward="false" selection-start-line="1603" selection-start-column="0" selection-end-line="1603" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -113,10 +114,10 @@
       <file leaf-file-name="l_files.h" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/l_files.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+            <state relative-caret-position="210">
+              <caret line="14" column="68" lean-forward="false" selection-start-line="14" selection-start-column="68" selection-end-line="14" selection-end-column="68" />
               <folding>
-                <element signature="e#37#56#0" expanded="true" />
+                <element signature="e#53#72#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -125,8 +126,8 @@
       <file leaf-file-name="Pycinska_Katarzyna_Program_01.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Pycinska_Katarzyna_Program_01.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="19" column="28" lean-forward="true" selection-start-line="19" selection-start-column="28" selection-end-line="19" selection-end-column="28" />
+            <state relative-caret-position="240">
+              <caret line="16" column="22" lean-forward="true" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
               </folding>
@@ -143,7 +144,13 @@
       <find>tab</find>
       <find>ifstream</find>
       <find>cout</find>
+      <find>Z</find>
+      <find>ik</find>
     </findStrings>
+    <replaceStrings>
+      <replace>tab</replace>
+      <replace>Ik</replace>
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -156,8 +163,8 @@
         <option value="$PROJECT_DIR$/main.cpp" />
         <option value="$PROJECT_DIR$/ex2.cpp" />
         <option value="$PROJECT_DIR$/CMakeLists.txt" />
-        <option value="$PROJECT_DIR$/l_files.h" />
         <option value="$PROJECT_DIR$/Pycinska_Katarzyna_Program_01.cpp" />
+        <option value="$PROJECT_DIR$/l_files.h" />
         <option value="$PROJECT_DIR$/l_files.cpp" />
       </list>
     </option>
@@ -253,7 +260,7 @@
       <workItem from="1519849648663" duration="5000" />
       <workItem from="1520005687163" duration="4296000" />
       <workItem from="1520104021240" duration="2768000" />
-      <workItem from="1520505355435" duration="3912000" />
+      <workItem from="1520505355435" duration="7669000" />
     </task>
     <task id="LOCAL-00001" summary="working for same number of dimensions">
       <created>1520007686188</created>
@@ -283,11 +290,25 @@
       <option name="project" value="LOCAL" />
       <updated>1520697172766</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="load to class">
+      <created>1520697697981</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1520697697981</updated>
+    </task>
+    <task id="LOCAL-00006" summary="long">
+      <created>1520697861106</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1520697861106</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11803000" />
+    <option name="totallyTimeSpent" value="15560000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1420" height="810" extended-state="0" />
@@ -323,11 +344,30 @@
     <MESSAGE value="working for 2dim" />
     <MESSAGE value="open file working" />
     <MESSAGE value="load file" />
-    <option name="LAST_COMMIT_MESSAGE" value="load file" />
+    <MESSAGE value="load to class" />
+    <MESSAGE value="long" />
+    <option name="LAST_COMMIT_MESSAGE" value="long" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="2" />
+      <breakpoints>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/l_files.cpp</url>
+          <line>141</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/l_files.cpp</url>
+          <line>148</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/l_files.cpp</url>
+          <line>147</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="10" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -429,14 +469,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ex3.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="2" lean-forward="false" selection-start-line="10" selection-start-column="2" selection-end-line="10" selection-end-column="2" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ex3.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
@@ -461,13 +493,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/l_files.h">
+    <entry file="file:///Library/Developer/CommandLineTools/usr/include/c++/v1/istream">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding>
-            <element signature="e#37#56#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="159">
+          <caret line="1603" column="0" lean-forward="false" selection-start-line="1603" selection-start-column="0" selection-end-line="1603" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ex3.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="2" lean-forward="false" selection-start-line="10" selection-start-column="2" selection-end-line="10" selection-end-column="2" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -481,18 +519,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Pycinska_Katarzyna_Program_01.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="28" lean-forward="true" selection-start-line="19" selection-start-column="28" selection-end-line="19" selection-end-column="28" />
+        <state relative-caret-position="240">
+          <caret line="16" column="22" lean-forward="true" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/l_files.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="68" lean-forward="false" selection-start-line="14" selection-start-column="68" selection-end-line="14" selection-end-column="68" />
+          <folding>
+            <element signature="e#53#72#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/l_files.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-834">
-          <caret line="29" column="19" lean-forward="true" selection-start-line="29" selection-start-column="19" selection-end-line="29" selection-end-column="19" />
+        <state relative-caret-position="326">
+          <caret line="148" column="33" lean-forward="false" selection-start-line="148" selection-start-column="33" selection-end-line="148" selection-end-column="33" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
           </folding>

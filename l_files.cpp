@@ -2,6 +2,11 @@
 #include <vector>
 #include "l_files.h"
 
+
+int f_wyszukiwanie_interpolacyjne(long long k, int N, long long *Z);
+
+void obliczLiczbeElementow(long long dataSet[], int numberOfElements, long long dataSetToFind[], int numbersToFind);
+
 using namespace std;
 
 class DataSet {
@@ -18,6 +23,21 @@ public:
     }
 
 public:
+    int getNumberOfElements() const {
+        return numberOfElements;
+    }
+
+    long long int *getDataSet() const {
+        return dataSet;
+    }
+
+    int getNumberOfElementsToFind() const {
+        return numberOfElementsToFind;
+    }
+
+    long long int *getDataSetToFind() const {
+        return dataSetToFind;
+    }
 
 private:
     int numberOfElements;
@@ -25,7 +45,10 @@ private:
     int numberOfElementsToFind;
     long long *dataSetToFind;
 
+
 };
+
+void obliczLiczbeElementow();
 
 void split(string line, long long arr[], int numberOfElements) {
     int i = 0;
@@ -55,7 +78,6 @@ void f_otwarcie_pliku_do_odczytu(ifstream &odczyt_pliku) {
     if (myfile.is_open()) {
         getline(myfile, line);
         numberOfInputDataSets = std::stoi(line);
-        DataSet *dataSets[numberOfInputDataSets];
 
         cout << "number of data sets " << numberOfInputDataSets << endl;
 
@@ -66,8 +88,12 @@ void f_otwarcie_pliku_do_odczytu(ifstream &odczyt_pliku) {
             long long dataSet[numberOfElements];
 
             getline(myfile, line);
-            split(line, dataSet, numberOfElements);
             cout << "dataSet before parse " << line << endl;
+            split(line, dataSet, numberOfElements);
+            for (int i = 0; i < numberOfElements; i++) {
+                cout << "--> " << dataSet[i] << endl;
+            }
+
 
             getline(myfile, line);
             int numberOfElementsToSearch = std::stoi(line);
@@ -75,39 +101,53 @@ void f_otwarcie_pliku_do_odczytu(ifstream &odczyt_pliku) {
             getline(myfile, line);
             cout << "dataSet to find before parse " << line << endl;
             split(line, dataToFind, numberOfElementsToSearch);
-            dataSets[dataSetNumber] = new DataSet(dataToFind, numberOfElements, dataSet, numberOfElementsToSearch);
+
+            obliczLiczbeElementow(dataSet, numberOfElements, dataToFind, numberOfElementsToSearch);
+
         }
 
         myfile.close();
+
+
     } else cout << "Unable to open file ";
-
-}
-
-long long *f_otworz_tab(unsigned short int rozmiar) {
-    long long *tab;
-    tab = new long long[rozmiar];
-
-    return tab;
 }
 
 
-int f_wyszukiwanie_interpolacyjne(long long wartosc_szukana, int Ip, int Ik, long long *tab) {
-    int Is; //indeks szukanej
-    Is = (Ip + ((wartosc_szukana - tab[Ip] * (Ik - Ip)) / (tab[Ik] - tab[Ip])));
-    if (tab[Is] == wartosc_szukana)
-        return Is;
+int wyszukiwanieBinarne(long long dataSet[], int numberOfElements, int numberToFind) {
+    return -1;
+}
 
-    while (tab[Is] != wartosc_szukana) {
-        if (tab[Is] != wartosc_szukana) {
-            Ik = Is;
-            Is = (Ip + ((wartosc_szukana - tab[Ip] * (Ik - Ip)) / (tab[Ik] - tab[Ip])));
-        } else {
-            if (tab[Is] < wartosc_szukana) {
-                Ip = Is;
-                Is = (Ip + ((wartosc_szukana - tab[Ip] * (Ik - Ip)) / (tab[Ik] - tab[Ip])));
-            }
-        }
+int f_wyszukiwanie_interpolacyjne(long long k, int N, long long *Z) {
+    // poszukujemy interpolacyjnie elementu k
+    int ip, ik, isr, L, p;
+
+    L = ip = 0;
+    ik = N - 1;
+    while ((Z[ip] <= k) && (k <= Z[ik])) {
+        L++;
+        isr = ip + (k - Z[ip]) * (ik - ip) / (Z[ik] - Z[ip]);
+        if (Z[isr] == k) {
+            p = isr;
+            return p;
+        } else if (k < Z[isr])
+            ik = isr - 1;
+        else
+            ip = isr + 1;
     }
-    return Is;
+
+    return -1;
+}
+
+
+void obliczLiczbeElementow(long long dataSet[], int numberOfElements, long long dataSetToFind[], int numbersToFind) {
+
+    for (int i = 0; i < numbersToFind; i++) {
+//        wyszukiwanieBinarne(dataSet, numberOfElements, dataSetToFind[i]);
+
+        long long szukanaLiczba = dataSetToFind[i];
+        int liczbaElementow = f_wyszukiwanie_interpolacyjne(szukanaLiczba, numberOfElements, dataSet);
+        cout << "liczba elemenow " << liczbaElementow << endl;
+    }
+
 }
 
