@@ -5,50 +5,12 @@
 
 int f_wyszukiwanie_interpolacyjne(long long k, int N, long long *Z);
 
-void obliczLiczbeElementow(long long dataSet[], int numberOfElements, long long dataSetToFind[], int numbersToFind);
+void
+obliczLiczbeElementow(long long dataSet[], int numberOfElements, const long long dataSetToFind[], int numbersToFind);
+
+int f_znajd_liczbe_wystapien(long long szukanaLiczbna, int N, long long dataSet[]);
 
 using namespace std;
-
-class DataSet {
-public:
-    DataSet(long long dataSetToFind[],
-            int numberOfElements,
-            long long dataSet[],
-            int nubmerOfElementsToFind)
-            : dataSetToFind(dataSetToFind),
-              numberOfElements(numberOfElements),
-              dataSet(dataSet),
-              numberOfElementsToFind(nubmerOfElementsToFind) {
-
-    }
-
-public:
-    int getNumberOfElements() const {
-        return numberOfElements;
-    }
-
-    long long int *getDataSet() const {
-        return dataSet;
-    }
-
-    int getNumberOfElementsToFind() const {
-        return numberOfElementsToFind;
-    }
-
-    long long int *getDataSetToFind() const {
-        return dataSetToFind;
-    }
-
-private:
-    int numberOfElements;
-    long long *dataSet;
-    int numberOfElementsToFind;
-    long long *dataSetToFind;
-
-
-};
-
-void obliczLiczbeElementow();
 
 void split(string line, long long arr[], int numberOfElements) {
     int i = 0;
@@ -113,10 +75,6 @@ void f_otwarcie_pliku_do_odczytu(ifstream &odczyt_pliku) {
 }
 
 
-int wyszukiwanieBinarne(long long dataSet[], int numberOfElements, int numberToFind) {
-    return -1;
-}
-
 int f_wyszukiwanie_interpolacyjne(long long k, int N, long long *Z) {
     // poszukujemy interpolacyjnie elementu k
     int ip, ik, isr, L, p;
@@ -139,15 +97,30 @@ int f_wyszukiwanie_interpolacyjne(long long k, int N, long long *Z) {
 }
 
 
-void obliczLiczbeElementow(long long dataSet[], int numberOfElements, long long dataSetToFind[], int numbersToFind) {
+void
+obliczLiczbeElementow(long long dataSet[], int numberOfElements, const long long dataSetToFind[], int numbersToFind) {
 
     for (int i = 0; i < numbersToFind; i++) {
 //        wyszukiwanieBinarne(dataSet, numberOfElements, dataSetToFind[i]);
 
         long long szukanaLiczba = dataSetToFind[i];
-        int liczbaElementow = f_wyszukiwanie_interpolacyjne(szukanaLiczba, numberOfElements, dataSet);
-        cout << "liczba elemenow " << liczbaElementow << endl;
-    }
 
+        int liczbaElementow = f_znajd_liczbe_wystapien(szukanaLiczba, numberOfElements, dataSet);
+        cout << "liczba Elementow: " << liczbaElementow << endl;
+
+        int index = f_wyszukiwanie_interpolacyjne(szukanaLiczba, numberOfElements, dataSet);
+        cout << "index: " << index << endl;
+
+    }
+}
+
+int f_znajd_liczbe_wystapien(long long szukanaLiczbna, int N, long long dataSet[]) {
+    int counter = 0;
+    for (int i = 0; i < N; i++) {
+        if (dataSet[i] == szukanaLiczbna) {
+            counter++;
+        }
+    }
+    return counter;
 }
 
