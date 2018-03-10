@@ -6,9 +6,9 @@ using namespace std;
 
 class DataSet {
 public:
-    DataSet(int dataSetToFind[],
+    DataSet(long long dataSetToFind[],
             int numberOfElements,
-            int dataSet[],
+            long long dataSet[],
             int nubmerOfElementsToFind)
             : dataSetToFind(dataSetToFind),
               numberOfElements(numberOfElements),
@@ -21,13 +21,13 @@ public:
 
 private:
     int numberOfElements;
-    int *dataSet;
+    long long *dataSet;
     int numberOfElementsToFind;
-    int *dataSetToFind;
+    long long *dataSetToFind;
 
 };
 
-void split(string line, int arr[], int numberOfElements) {
+void split(string line, long long arr[], int numberOfElements) {
     int i = 0;
     stringstream ssin(line);
     while (ssin.good() && i < numberOfElements) {
@@ -63,7 +63,7 @@ void f_otwarcie_pliku_do_odczytu(ifstream &odczyt_pliku) {
             getline(myfile, line);
             int numberOfElements = std::stoi(line);
             cout << "number of elements " << numberOfElements << endl;
-            int dataSet[numberOfElements];
+            long long dataSet[numberOfElements];
 
             getline(myfile, line);
             split(line, dataSet, numberOfElements);
@@ -71,7 +71,7 @@ void f_otwarcie_pliku_do_odczytu(ifstream &odczyt_pliku) {
 
             getline(myfile, line);
             int numberOfElementsToSearch = std::stoi(line);
-            int dataToFind[numberOfElementsToSearch];
+            long long dataToFind[numberOfElementsToSearch];
             getline(myfile, line);
             cout << "dataSet to find before parse " << line << endl;
             split(line, dataToFind, numberOfElementsToSearch);
