@@ -29,13 +29,37 @@ void split(string line, long long arr[], int numberOfElements) {
     }
 }
 
+string SplitFilename(const string &str) {
+    size_t found;
+    found = str.find_last_of("/\\");
+    return str.substr(found + 1);
+}
+
+string SplitFilenameIndex(const string &str) {
+    size_t found;
+    found = str.find_last_of("in");
+    return str.substr(found + 1);
+}
+
+string eraseSubStr(std::string &mainStr, const std::string &toErase) {
+    // Search for the substring in string
+    size_t pos = mainStr.find(toErase);
+
+    if (pos != std::string::npos) {
+        // If found then erase it from string
+        return mainStr.erase(pos, toErase.length());
+    }
+}
 
 void f_otwarcie_pliku_do_odczytu(ifstream &odczyt_pliku) {
-    string nazwa = "/Users/tomasz.lelek/CLionProjects/tablica/in1.txt"; //todo hardcoded
-    cout << "Podaj pelna sciezke do pliku: " << endl;
+    string nazwa = "/Users/tomasz.lelek/CLionProjects/tablica/in4.txt"; //todo hardcoded
 
-    // /Users/tomasz.lelek/CLionProjects/tablica/in1.txt
-//    cin >> nazwa;
+    cout << "Podaj pelna sciezke do pliku: " << endl;
+    cin >> nazwa;
+
+    string nameOfFIle = SplitFilenameIndex(SplitFilename(nazwa));
+
+    string fileNameIndex = eraseSubStr(nameOfFIle, ".txt");
 
 
     int numberOfInputDataSets = 0;
@@ -47,6 +71,12 @@ void f_otwarcie_pliku_do_odczytu(ifstream &odczyt_pliku) {
         numberOfInputDataSets = std::stoi(line);
 
         cout << "number of data sets " << numberOfInputDataSets << endl;
+
+        //todo tmp directory
+        ofstream outputFile(string("/tmp/out")
+                                    .append(fileNameIndex)
+                                    .append(".txt")
+        );
 
         for (int dataSetNumber = 0; dataSetNumber < numberOfInputDataSets; dataSetNumber++) {
             getline(myfile, line);
@@ -69,12 +99,6 @@ void f_otwarcie_pliku_do_odczytu(ifstream &odczyt_pliku) {
             cout << "dataSet to find before parse " << line << endl;
             split(line, dataToFind, numberOfElementsToSearch);
 
-
-            //todo tmp directory
-            ofstream outputFile(string("/tmp/out")
-                                        .append(std::to_string(dataSetNumber + 1))
-                                        .append(".txt")
-            );
 
             long long **result = obliczLiczbeElementow(dataSet,
                                                        numberOfElements,
@@ -124,7 +148,7 @@ int f_wyszukiwanie_interpolacyjne(long long k, int N, long long *Z) {
     ik = N - 1;
     while ((Z[ip] <= k) && (k <= Z[ik])) {
         L++;
-        isr = ip + (k - Z[ip]) * (ik - ip) / (Z[ik] - Z[ip]);
+        isr = ip + (k - Z[ip]) * (ik - ip) / (Z[ik] - Z[ip]);//todo ex4 not working
         if (Z[isr] == k) {
             p = isr;
             return p;
@@ -144,8 +168,6 @@ obliczLiczbeElementow(long long int dataSet[], int numberOfElements, long long i
     auto **result = new long long *[numbersToFind];
 
     for (int i = 0; i < numbersToFind; i++) {
-//        wyszukiwanieBinarne(dataSet, numberOfElements, dataSetToFind[i]);
-
         long long szukanaLiczba = dataSetToFind[i];
 
         int liczbaElementow = f_znajd_liczbe_wystapien(szukanaLiczba, numberOfElements, dataSet);
@@ -172,13 +194,6 @@ int f_znajd_liczbe_wystapien(long long szukanaLiczbna, int N, long long dataSet[
 }
 
 set<long long> f_usun_duplikaty(long long dataSet[], int n) {
-//    long long result[n];
-//
-//    for (int i = 0; i < n; i++) {
-//        result[dataSet[i] % n] = dataSet[i];
-//    }
-//    return result;
-
     std::set<long long> result;
 
     for (int i = 0; i < n; i++) {
