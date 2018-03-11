@@ -148,6 +148,10 @@ int f_wyszukiwanie_interpolacyjne(long long k, int N, long long *Z) {
     ik = N - 1;
     while ((Z[ip] <= k) && (k <= Z[ik])) {
         L++;
+
+        if ((Z[ik] - Z[ip])==0) {
+            return 0;
+        }
         isr = ip + (k - Z[ip]) * (ik - ip) / (Z[ik] - Z[ip]);//todo ex4 not working
         if (Z[isr] == k) {
             p = isr;
