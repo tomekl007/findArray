@@ -7,7 +7,6 @@ using namespace std;
 
 int main() {
     ifstream odczyt_pliku;
-    ofstream zapis_pliku;
 
     f_otwarcie_pliku_do_odczytu(odczyt_pliku);
     return 0;
